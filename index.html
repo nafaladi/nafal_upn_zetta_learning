@@ -33,103 +33,118 @@
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <header>
+        <section id="section_a" style="text-align: center;">
 
-        <h1>ZettaCamp X UPN "Veteran" Yogyakarta</h1>
-        <h2>Task HTML Day 4</h2>
-        <span>
-            Senin, 17 Oktober 2022
-        </span>
-    </div>
-    <div>
-        <br><br>
-        <form method="POST" action="">
-            <table>
-                <tr>
-                    <th>Nama Depan</th>
-                    <td>
-                        <input type="text" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Nama Belakang</th>
-                    <td>
-                        <input type="text" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Tanggal Lahir</th>
-                    <td>
-                        <input type="date" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Umur</th>
-                    <td>
-                        <input type="number" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Jenis Kelamin</th>
-                    <td>
-                        <input type="radio" id="laki" name="jk" value="">
-                        <label for="laki">Laki - Laki</label>
-                        <input type="radio" id="perempuan" name="jk" value="">
-                        <label for="perempuan">Perempuan</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Agama</th>
-                    <td>
-                        <select name="agama" id="agama">
-                            <option value="">Islam</option>
-                            <option value="">Protestan</option>
-                            <option value="">Katolik</option>
-                            <option value="">Hindu</option>
-                            <option value="">Buddha</option>
-                            <option value="">Khonghucu</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>
-                        <input type="email" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Telepon</th>
-                    <td>
-                        <input type="number" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Biografi</th>
-                    <td>
-                        <textarea name="" id="" cols="40" rows="8"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Sosial Media</th>
-                    <td>
-                        <input type="url" name="" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>
-                        <button type="submit" name="submit">
-                            <a href="index.html">Kembali</a>
-                        </button>
-                        <button type="submit" name="submit">Submit</button>
-                    </td>
-                </tr>
-                <tr>
-
-                </tr>
-            </table>  
-        </form>
-    </div>
+            <h1>ZettaCamp X UPN "Veteran" Yogyakarta</h1>
+            <h2>Task HTML Day 5</h2>
+            <span>
+                Senin, 17 Oktober 2022
+            </span>
+            <br><br><br>
+            <nav>
+                <a href="#section_a">Section A</a>
+                <a href="#section_b">Section B</a>
+                <a href="itemlist.html">Page 2</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section>
+            <br><hr>
+            <h2 style="text-align: center">Section A</h2>
+            <form method="POST" action="#section_b">
+                <table>
+                    <tr>
+                        <th>Nama Item</th>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gambar</th>
+                        <td>
+                            <input type="file" accept="image/*" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Deskripsi</th>
+                        <td>
+                            <textarea name="" id="" cols="40" rows="8"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Jumlah</th>
+                        <td>
+                            <input type="number" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Harga</th>
+                        <td>
+                            <input type="number" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>
+                            <input type="number" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Belum Dibayar</option>
+                                <option value="">Diproses</option>
+                                <option value="">Dibayar</option>
+                                <option value="">Selesai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Ekspres</th>
+                        <td>
+                            <input type="radio" id="ya" name="jk" value="">
+                            <label for="ya">Ya</label>
+                            <input type="radio" id="tidak" name="jk" value="">
+                            <label for="tidak">Tidak</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <button type="submit" name="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>  
+            </form>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="section_b" style="text-align: center;">
+            <hr>
+            <h2>Section B</h2>
+            <article>
+                <details open>
+                    <summary>Inspire 2</summary>
+                    <img src="https://www1.djicdn.com/cms/uploads/b7bb7416b00f6f4912a90630c6b062a1.png" alt="" height=300> <br>
+                    DJI Inspire 2 adalah kamera drone dengan resolusi video 4K yang bisa menempuh jarak terbang maksimal hingga 2500m. Dengan berat sebesar 3440g, kamera ini dapat terbang dengan kecepatan maksimum 58km/h selama 27min.
+                </details>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <section style="text-align: center;">
+            <br><br><hr>
+            <p>Tugas HTML Day 5</p>
+            <nav>
+                <a href="#section_a">Section A</a>
+                <a href="#section_b">Section B</a>
+                <a href="itemlist.html">Page 2</a>
+            </nav>
+            <br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </footer>
 </body>
 
 </html>
