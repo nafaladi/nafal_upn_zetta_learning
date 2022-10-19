@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Day 4</title>
+    <title>Task Day 5</title>
     <link rel="icon" href="assets/img/UPNVY.png" type="image/x-icon">
     <style>
         table {
@@ -16,19 +16,16 @@
 
         tr{
             text-align: left;
+
         }
 
         th{
-            width: 10;
-        }
-
-        .titik{
-            width: 1;
+            width: 10%;
         }
 
         td,
         th {
-            border: 1px solid #dddddd;
+            border: 0px solid #dddddd;
             text-align: left;
             padding: 8px;
         }
@@ -43,104 +40,95 @@
         <span>
             Senin, 17 Oktober 2022
         </span>
-        <div>
-            <br><br>
+    </div>
+    <div>
+        <br><br>
+        <form method="POST" action="">
             <table>
                 <tr>
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Nafal" width="200"
-                        style="text-align: center;">
-                </tr>
-                <tr>
-                    <th>Nama</th>
-                    <td class="titik">:</td>
-                    <td>Nafal Adi Syamaidzar Laudza</td>
-                </tr>
-                <tr>
-                    <th>Asal</th>
-                    <td>:</td>
-                    <td>Cilacap, Jawa Tengah</td>
-                </tr>
-                <tr>
-                    <th>Program Studi</th>
-                    <td>:</td>
-                    <td>Sistem Informasi, UPN "Veteran" Yogyakarta</td>
-                </tr>
-                <tr>
-                    <th>Tentang Saya</th>
-                    <td>:</td>
+                    <th>Nama Depan</th>
                     <td>
-                        <p>
-                            Saya adalah orang yang sangat disiplin dan fokus terhadap hasil kerja hingga cenderung
-                            <b>idealis</b>. Namun, saya juga bisa <b>realistis</b> saat menentukan target atau tujuan
-                            dan selalu berupaya keras untuk bisa mencapai tujuan tersebut dengan cara yang baik dan
-                            efisien.
-                        </p>
+                        <input type="text" name="" id="">
                     </td>
                 </tr>
                 <tr>
-                    <th>Hobi</th>
-                    <td>:</td>
+                    <th>Nama Belakang</th>
                     <td>
-                        <li>Menonton Film</li>
-                        <li>Bermain Game</li>
-                        <li>Tidur</li>
+                        <input type="text" name="" id="">
                     </td>
                 </tr>
                 <tr>
-                    <th>Media Sosial</th>
-                    <td>:</td>
+                    <th>Tanggal Lahir</th>
                     <td>
-                        <a href="https://www.instagram.com/nafaladi">
-                            <img alt="Instagram" src="assets/img/instagram.webp" width=30 height="30">
-                        </a>
-                        <a href="https://www.twitter.com/nafaladi">
-                            <img alt="Facebook"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
-                                width=30 height="30">
-                        </a>
+                        <input type="date" name="" id="">
                     </td>
                 </tr>
                 <tr>
-                    <th>Shopping List</th>
-                    <td>:</td>
+                    <th>Umur</th>
                     <td>
-                        <a href="shopping.html">
-                            <img alt="Shopping"
-                                src="https://static.vecteezy.com/system/resources/previews/000/425/526/original/shopping-cart-icon-vector-illustration.jpg"
-                                width=30 height="30">
-                        </a>
+                        <input type="number" name="" id="">
                     </td>
                 </tr>
                 <tr>
-                    <th>Musik dan Video Favorit</th>
-                    <td>:</td>
+                    <th>Jenis Kelamin</th>
                     <td>
-                        <ul style="list-style: none;">
-                            <li>
-                                <audio src="assets/music/Tulus - Tujuh Belas.mp3" controls loop>
-                                    Browser anda tidak mendukung musik ini
-                                </audio>
-                            </li>
-                            <li>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/oLVYehLSaVc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </li>
-                        </ul>
+                        <input type="radio" id="laki" name="jk" value="">
+                        <label for="laki">Laki - Laki</label>
+                        <input type="radio" id="perempuan" name="jk" value="">
+                        <label for="perempuan">Perempuan</label>
                     </td>
                 </tr>
                 <tr>
-                    <th>Input Form</th>
-                    <td>:</td>
-                    <th>
-                        <a href="input.html">
-                            Klik disini
-                        </a>
-                    </th>
+                    <th>Agama</th>
+                    <td>
+                        <select name="agama" id="agama">
+                            <option value="">Islam</option>
+                            <option value="">Protestan</option>
+                            <option value="">Katolik</option>
+                            <option value="">Hindu</option>
+                            <option value="">Buddha</option>
+                            <option value="">Khonghucu</option>
+                        </select>
+                    </td>
                 </tr>
-            </table>
-        </div>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="email" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Telepon</th>
+                    <td>
+                        <input type="number" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Biografi</th>
+                    <td>
+                        <textarea name="" id="" cols="40" rows="8"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Sosial Media</th>
+                    <td>
+                        <input type="url" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <button type="submit" name="submit">
+                            <a href="index.html">Kembali</a>
+                        </button>
+                        <button type="submit" name="submit">Submit</button>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>  
+        </form>
     </div>
 </body>
 
