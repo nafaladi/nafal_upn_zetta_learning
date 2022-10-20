@@ -5,144 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Day 5</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Task Day 1 CSS</title>
     <link rel="icon" href="assets/img/UPNVY.png" type="image/x-icon">
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        tr{
-            text-align: left;
-
-        }
-
-        th{
-            width: 10%;
-        }
-
-        td,
-        th {
-            border: 0px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <section id="section_a" style="text-align: center;">
 
-            <h1>ZettaCamp X UPN "Veteran" Yogyakarta</h1>
-            <h2>Task HTML Day 5</h2>
-            <span>
-                Senin, 17 Oktober 2022
+            <h1 style="font-family: 'Poppins'">ZettaCamp X UPN "Veteran" Yogyakarta</h1>
+            <h2 style="font-family: 'Poppins'">Task CSS Day 1_1</h2>
+            <span style="font-family: 'Poppins'">
+                Selasa, 18 Oktober 2022
             </span>
-            <br><br><br>
-            <nav>
-                <a href="#section_a">Section A</a>
-                <a href="#section_b">Section B</a>
-                <a href="itemlist.html">Page 2</a>
-            </nav>
+            <hr>
         </section>
     </header>
     <main>
-        <section>
-            <br><hr>
-            <h2 style="text-align: center">Section A</h2>
-            <form method="POST" action="#section_b">
+        <div>
+            <h1 style="text-align: center; font-family: 'Poppins'">Superhero Profile</h1>
+            <div style="width: 800px; margin: auto; padding: 16px;">
+                <img style="display:block; margin:auto;" src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Spider-Man" width="120">
+                <h1 style="text-align: center; font-family: 'Poppins'; color:red;">Spider-Man</h1>
                 <table>
-                    <tr>
-                        <th>Nama Item</th>
+                    <tr style="font-family: 'Poppins'">
+                        <td >Debut Date</td>
+                        <td>:</td>
+                        <td>Agustus 1962</td>
+                    </tr>
+                    <tr style="color: green; font-family: 'Poppins'">
+                        <td>Superpower</td>
+                        <td>:</td>
                         <td>
-                            <input type="text" name="" id="">
+                            <ul>
+                                <li>
+                                    Kekuatan manusia super, kecepatan, stamina, ketangkasan, dan daya tahan
+                                </li>
+                                <li>
+                                    Kemampuan untuk berpegangan pada banyak permukaan
+                                </li>
+                                <li>
+                                    Dengan kejeniusan nya Mampu menciptakan web shooter
+                                </li>
+                                <li>
+                                    Panca indera laba-laba
+                                </li>
+                                <li>
+                                    Tingkat akal jenius
+                                </li>
+                            </ul>
                         </td>
                     </tr>
-                    <tr>
-                        <th>Gambar</th>
-                        <td>
-                            <input type="file" accept="image/*" name="" id="">
-                        </td>
+                    <tr style="font-family: 'Poppins'">
+                        <td>Profile:</td>
+                        <td>:</td>
+                        <td>Spider-Man, adalah pahlawan super fiktif dari Marvel Comics yang diciptakan oleh penulis Stan Lee dan artis Steve Ditko. Ia pertama muncul dalam Amazing Fantasy #15. Ia telah menjadi salah satu pahlawan super yang paling terkenal di dunia.</td>
                     </tr>
-                    <tr>
-                        <th>Deskripsi</th>
-                        <td>
-                            <textarea name="" id="" cols="40" rows="8"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Jumlah</th>
-                        <td>
-                            <input type="number" name="" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Harga</th>
-                        <td>
-                            <input type="number" name="" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Total</th>
-                        <td>
-                            <input type="number" name="" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Status</th>
-                        <td>
-                            <select name="" id="">
-                                <option value="">Belum Dibayar</option>
-                                <option value="">Diproses</option>
-                                <option value="">Dibayar</option>
-                                <option value="">Selesai</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Ekspres</th>
-                        <td>
-                            <input type="radio" id="ya" name="jk" value="">
-                            <label for="ya">Ya</label>
-                            <input type="radio" id="tidak" name="jk" value="">
-                            <label for="tidak">Tidak</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td>
-                            <button type="submit" name="submit">Submit</button>
-                        </td>
-                    </tr>
-                </table>  
-            </form>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div id="section_b" style="text-align: center;">
-            <hr>
-            <h2>Section B</h2>
-            <article>
-                <details open>
-                    <summary>Inspire 2</summary>
-                    <img src="https://www1.djicdn.com/cms/uploads/b7bb7416b00f6f4912a90630c6b062a1.png" alt="" height=300> <br>
-                    DJI Inspire 2 adalah kamera drone dengan resolusi video 4K yang bisa menempuh jarak terbang maksimal hingga 2500m. Dengan berat sebesar 3440g, kamera ini dapat terbang dengan kecepatan maksimum 58km/h selama 27min.
-                </details>
-            </article>
+                </table>
+            </div>
         </div>
     </main>
     <footer>
         <section style="text-align: center;">
             <br><br><hr>
-            <p>Tugas HTML Day 5</p>
-            <nav>
-                <a href="#section_a">Section A</a>
-                <a href="#section_b">Section B</a>
-                <a href="itemlist.html">Page 2</a>
-            </nav>
-            <br><br><br><br><br><br><br><br><br><br>
+            <p style="font-family: 'Poppins'">Tugas CSS Day 1_1</p>
         </section>
     </footer>
 </body>
