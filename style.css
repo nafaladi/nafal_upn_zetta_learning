@@ -31,7 +31,6 @@ body {
     border-radius: 5px;
     display: inline-block;
     background: #fff;
-    position: relative;
     margin: 0px 40px 0px 40px;
     width: 300px;
     height: auto;
@@ -43,7 +42,6 @@ body {
     border-radius: 5px;
     display: inline-block;
     background: #fff;
-    position: relative;
     margin: 1rem 40px 1rem 40px;
     width: 300px;
     height: auto;
@@ -55,7 +53,6 @@ body {
     border-radius: 5px;
     display: inline-block;
     background: #fff;
-    position: relative;
     margin: 0px 40px 0px 40px;
     width: 300px;
     height: auto;
@@ -125,4 +122,15 @@ a .button-center:hover i {
 
 .btn:hover {
     background-color: rgb(0, 231, 0);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: #9fdf55;
+    border-radius: 5px;
 }
