@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    transition: all .7s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    text-align: center
+}
+
+.des {
+    margin: 20px 100px 50px 100px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.cards {
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 5px;
+    display: inline-block;
+    background: #fff;
+    margin: 1rem 40px 1rem 40px;
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px #999;
+}
+
+.pic {
+    height: 200px;
+    background-size: 200px;
+    background-position: center;
+    padding: 0 0 20px 0;
+    margin-bottom: 35px;
+}
+
+.wrapper:hover .pic,
+.wrapper:focus .pic {
+    transform: scale(1.2);
+}
+
+p.header {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.content {
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.button-center {
+    background-color: #8bc34a;
+    margin-top: 20px;
+}
+
+a .leesmeer {
+    height: 40px;
+    width: 110px;
+    padding-left: 10px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+a .button-center:hover {
+    background-color: #9fdf55;
+}
+
+a .button-center i {
+    color: #fff;
+    margin-left: 5px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+a .button-center:hover i {
+    margin: 0 0 0 20px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 231, 0);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: #9fdf55;
+    border-radius: 5px;
+}
