@@ -1,4 +1,4 @@
-function bookPurchasing(book, discount, tax, stock, order){
+function bookPurchasing(book, discount, tax, stock, order, credit){
 
     const price=book.price;
     const discountAmount=price*(discount/100);
@@ -17,7 +17,7 @@ function bookPurchasing(book, discount, tax, stock, order){
             subtotalBooksPrice += book.price;
             totalTax += taxAmount;
         }else{
-            console.log("Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!");
+            console.log("[Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!]");
             console.log();
             break;
         }
@@ -31,20 +31,32 @@ function bookPurchasing(book, discount, tax, stock, order){
         console.log("Harga Buku Satuan            : Rp",price);
         console.log("Jumlah Buku Yang Dibeli      :",order,"buah");
         console.log("Subtotal Buku                : Rp",subtotalBooksPrice);
-        console.log("Besar Diskon Buku            : Rp",totalDiscount,"(",discount,"% )");
+        console.log("Diskon Buku                  : Rp",totalDiscount,"(",discount,"% )");
         console.log("Subtotal Buku Setelah Diskon : Rp",totalPriceAfterDiscount);
         console.log("PPN                          : Rp",totalTax,"(",tax,"% )");
         console.log("Total Pembayaran             : Rp",totalPaymentPrice);
-        console.log("Sisa Stok buku               :",stock-order,"buah");
+        console.log("Sisa Stok Buku               :",stock-order,"buah");
 
         if (stock-order === 0){
-            console.log("Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!");
+            console.log("[Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!]");
         }else{
-            console.log("Stok buku masih tersedia, silakan beli kembali yaaa!");
+            console.log("[Stok buku masih tersedia, silakan beli kembali yaaa!]");
         }
+
         console.log();
+        console.log("Jangka waktu kredit          :",credit,"bulan");
         console.groupEnd();
     }
+
+    jatuhTempo= totalPaymentPrice/credit;
+    bayarAngsuran = [];
+    for(let index=0; index<credit; index++){
+        bayarAngsuran.push({
+            Angsuran_Bulan_Ke: index+1,
+            Rp: jatuhTempo
+        })
+    }
+    console.log(Array.from(bayarAngsuran));
     return totalPaymentPrice;
 }
-bookPurchasing({title: "Filosofi Teras", price: 98000, status: true},20,10,5,3);
+bookPurchasing({title: "Filosofi Teras", price: 98000, status: true},20,10,5,3,7);
