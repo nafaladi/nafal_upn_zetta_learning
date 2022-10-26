@@ -1,5 +1,4 @@
 function bookPurchasing(book, discount, tax){
-    let result = 0;
     if(book && book.price){
         const price=book.price;
         const discountAmount=price*(discount/100);
@@ -9,11 +8,12 @@ function bookPurchasing(book, discount, tax){
 
         console.group();
         console.log("Judul Buku                 :",book.title);
-        console.log("Harga Buku                 : Rp",price);
-        console.log("Diskon                     :",discount,"%");
+        console.log("Harga Buku Satuan          : Rp",price);
+        console.log("Besar Diskon Buku          : Rp",discountAmount,"(",discount,"% )");
         console.log("Harga Buku Setelah Diskon  : Rp",priceAfterDiscount);
-        console.log("Pajak Pertambahan Nilai    :",tax,"%");
+        console.log("PPN                        : Rp",taxAmount,"(",tax,"% )");
         console.log("Total Pembayaran           : Rp",priceAfterTax);
+        console.log();
         console.groupEnd();
     }
     return 0;
