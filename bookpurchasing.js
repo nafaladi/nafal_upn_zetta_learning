@@ -9,7 +9,7 @@ function bookPurchasing(book, discount, tax){
         console.group();
         console.log("Judul Buku                 :",book.title);
         console.log("Harga Buku Satuan          : Rp",price);
-        console.log("Besar Diskon Buku          : Rp",discountAmount,"(",discount,"% )");
+        console.log("Diskon Buku                : Rp",discountAmount,"(",discount,"% )");
         console.log("Harga Buku Setelah Diskon  : Rp",priceAfterDiscount);
         console.log("PPN                        : Rp",taxAmount,"(",tax,"% )");
         console.log("Total Pembayaran           : Rp",priceAfterTax);
