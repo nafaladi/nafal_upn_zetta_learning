@@ -17,7 +17,7 @@ function bookPurchasing(book, discount, tax, stock, order){
             subtotalBooksPrice += book.price;
             totalTax += taxAmount;
         }else{
-            console.log("Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!");
+            console.log("[Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!]");
             console.log();
             break;
         }
@@ -31,16 +31,16 @@ function bookPurchasing(book, discount, tax, stock, order){
         console.log("Harga Buku Satuan            : Rp",price);
         console.log("Jumlah Buku Yang Dibeli      :",order,"buah");
         console.log("Subtotal Buku                : Rp",subtotalBooksPrice);
-        console.log("Besar Diskon Buku            : Rp",totalDiscount,"(",discount,"% )");
+        console.log("Diskon Buku                  : Rp",totalDiscount,"(",discount,"% )");
         console.log("Subtotal Buku Setelah Diskon : Rp",totalPriceAfterDiscount);
         console.log("PPN                          : Rp",totalTax,"(",tax,"% )");
         console.log("Total Pembayaran             : Rp",totalPaymentPrice);
-        console.log("Sisa Stok buku               :",stock-order,"buah");
+        console.log("Sisa Stok Buku               :",stock-order,"buah");
 
         if (stock-order === 0){
-            console.log("Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!");
+            console.log("[Maaf stok buku habis, silakan kunjungi kembali dilain waktu yaaa!]");
         }else{
-            console.log("Stok buku masih tersedia, silakan beli kembali yaaa!");
+            console.log("[Stok buku masih tersedia, silakan beli kembali yaaa!]");
         }
         console.log();
         console.groupEnd();
