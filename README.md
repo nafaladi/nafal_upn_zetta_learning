@@ -26,3 +26,11 @@
   Sebuah NgModule dapat mengasosiasikan komponennya dengan kode terkait, seperti layanan, untuk membentuk unit fungsional. Setiap aplikasi Angular memiliki modul root, yang secara konvensional dinamai AppModule. Modul ini menyediakan mekanisme Bootstrap yang meluncurkan aplikasi. Oleh karena itu, sebuah aplikasi biasanya berisi banyak modul fungsional. Seperti modul JavaScript, NgModules dapat mengimpor fungsionalitas dari NgModules lain, dan memungkinkan fungsionalitasnya sendiri untuk diekspor dan digunakan oleh NgModules lain.
 
 - Hubungan component dan module adalah, module berisikan component yang saling berhubungan satu sama lain dan component juga membutuhkan module untuk mingidentifikasi components lainnya
+
+- Quiz
+1. Components yang merupakan isi dari module tersebut akan dibagi menjadi beberapa jenis file yaitu:
+   - HTML untuk struktur tampilannya
+   - Typescript untuk isi dari HTML tersebut 
+   - SCSS untuk styling
+2. Component akan dikelompokkan berdasarkan modulenya seperti module subscriptions, module beranda yang akan menampilkan component-component yang merupakan isi dari module tersebut
+3. Struktur file proyek tersebut dapat diperkirakan karena hasil akhir dari project angular merupakan satu file HTML saja
