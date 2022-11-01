@@ -1,7 +1,8 @@
-- Penjelasan Singkat
+- Tugas
+1. Penjelasan Singkat
 Angular adalah open-source JavaScript framework yang ditulis dalam TypeScript. Angular dikelola oleh Google, dan tujuan utamanya adalah untuk mengembangkan aplikasi satu halaman. Sebagai framework, Angular memiliki keunggulan yang jelas sekaligus menyediakan struktur standar bagi developer untuk dapat bekerja dengannya. Ini memungkinkan pengguna untuk membuat aplikasi besar yang dapat mudah dikelola.
 
-- Konsep dan Arsitektur
+2. Konsep dan Arsitektur
 MVC – Framework ini dibangun di atas konsep MVC (Model-View-Controller) yang terkenal. Ini adalah pola desain yang digunakan di semua aplikasi web modern. Pola ini didasari pada pemisahan lapisan logika bisnis, lapisan data, dan lapisan presentasi menjadi beberapa bagian terpisah. Pembagian menjadi beberapa bagian ini dilakukan agar masing-masing bagian dapat dikelola dengan lebih mudah.
 
   AngularJS menggunakan arsitektur Model-View-Controller (MVC) yang digunakan dalam pengembangan aplikasi berbasis web.
@@ -20,12 +21,12 @@ MVC – Framework ini dibangun di atas konsep MVC (Model-View-Controller) yang t
   AngularJS menggunakan input untuk memodifikasi HTML.
   Dengan bersatunya JavaScript dan HTML berkat framework ini, kode di antara kedua bahasa tersebut akan tersinkron. Mekanisme ini nantinya memudahkan pekerjaan developer karena meminimalkan kode yang harus mereka tulis.
 
-- Module
+3. Module
 NgModule merupakan sekumpulan komponen yang didedikasikan untuk domain aplikasi, alur kerja, atau sekumpulan kemampuan yang terkait erat. Angular NgModules berbeda dari modul JavaScript, tapi juga bertugas untuk melengkapinya.
 
   Sebuah NgModule dapat mengasosiasikan komponennya dengan kode terkait, seperti layanan, untuk membentuk unit fungsional. Setiap aplikasi Angular memiliki modul root, yang secara konvensional dinamai AppModule. Modul ini menyediakan mekanisme Bootstrap yang meluncurkan aplikasi. Oleh karena itu, sebuah aplikasi biasanya berisi banyak modul fungsional. Seperti modul JavaScript, NgModules dapat mengimpor fungsionalitas dari NgModules lain, dan memungkinkan fungsionalitasnya sendiri untuk diekspor dan digunakan oleh NgModules lain.
 
-- Hubungan component dan module adalah, module berisikan component yang saling berhubungan satu sama lain dan component juga membutuhkan module untuk mingidentifikasi components lainnya
+4. Hubungan component dan module adalah, module berisikan component yang saling berhubungan satu sama lain dan component juga membutuhkan module untuk mingidentifikasi components lainnya
 
 - Quiz
 1. Components yang merupakan isi dari module tersebut akan dibagi menjadi beberapa jenis file yaitu:
