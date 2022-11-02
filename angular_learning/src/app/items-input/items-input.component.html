@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-header" *ngIf="element.type === 'individu'">{{ element.name }} <mark>(Individu)</mark></div>
+  <div class="card-header" *ngIf="element.type === 'kelompok'">{{ element.name }} <mark>(Kelompok)</mark>
+  </div>
+  <div class="card-body">
+    <strong>{{ element.content }}</strong>
+
+  </div>
+</div>
