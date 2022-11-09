@@ -11,16 +11,16 @@ Aplikasi sudut dapat menggunakan metode kait siklus hidup untuk memanfaatkan per
 
 # Quiz
 
-Initialisasi directive atau komponen setelah angular pertamakali menampilkan properti data
-Mengatur directive atau properti input komponen
-Dipanggil sekali, setelah ngOnChanges() pertama. ngOnInit() masih dipanggil bahkan ketika ngOnChanges() tidak (yang terjadi ketika tidak ada input terikat template).
-Dipanggil sekali setelah ngAfterContentChecked() pertama.
-Dipanggil sebelum ngOnInit() (jika komponen memiliki input terikat) dan setiap kali satu atau lebih properti input terikat data berubah.
-Urutannya :
-ngOnChanges
-ngOnInit
-ngDoCheck
-ngAFterContentInit
-ngAfterContentChecked
-ngAfterViewInit
-ngAfterViewChecked
+1. Initialisasi directive atau komponen setelah angular pertamakali menampilkan properti data
+2. Mengatur directive atau properti input komponen
+3. Dipanggil sekali, setelah ngOnChanges() pertama. ngOnInit() masih dipanggil bahkan ketika ngOnChanges() tidak (yang terjadi ketika tidak ada input terikat template).
+4. Dipanggil sekali setelah ngAfterContentChecked() pertama.
+   Dipanggil sebelum ngOnInit() (jika komponen memiliki input terikat) dan setiap kali satu atau lebih properti input terikat data berubah.
+5. Urutannya :
+   a. ngOnChanges
+   b. ngOnInit
+   c. ngDoCheck
+   d. ngAFterContentInit
+   e. ngAfterContentChecked
+   f. ngAfterViewInit
+   g. ngAfterViewChecked
